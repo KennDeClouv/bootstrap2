@@ -1,69 +1,23 @@
-/*todo ==== Root Settings ==== */
-:root {
-      /*?==== Main Color ==== */
-      --primary: #28cb8b;
-      --secondary: #263238;
-      --info: #2194f3;
-      /*?==== Shades Color ==== */
-      --shade1: #43a046;
-      --shade2: #388e3b;
-      --shade3: #237d31;
-      --shade4: #1b5e1f;
-      --shade5: #103e13;
-      /*?==== Tints Color ==== */
-      --tint1: #43a046;
-      --tint2: #388e3b;
-      --tint3: #237d31;
-      --tint4: #1b5e1f;
-      --tint5: #103e13;
-      /*?==== Neutral Color ==== */
-      --black: #263238;
-      --d-grey: #4d4d4d;
-      --grey: #717171;
-      --l-grey: #89939e;
-      --grey-blue: #abbed1;
-      --silver: #f5f7fa;
-      --white: #ffffff;
+/*? ==== Universal Settings ==== */
+
+html{
+      scroll-padding-top: 4em;
 }
 
-html {
-      overflow-x: hidden;
+.img{
+      background-image: url(https://cutewallpaper.org/21/pixel-wallpaper-gif/Pixel-Animation-City-Skylines-GIF-by-iSaith-Gfycat.gif);
+      height: 100vh;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: -1;
+      /* background-attachment: local; */
 }
-span{
-    color: var(--primary);
-}
-
-.n {
-      margin: auto;
-      padding: 14px 0;
-}
-
-.login div {
-      padding: 10px 20px;
-      margin-left: 10px;
-}
-
-.home {
-      height: 93vh;
-      /* align-items: center; */
-      /* display: flex; */
-      background-color: var(--silver);
-}
-
-.home-des {
-      padding: 96px 0px;
-      /* gap: 104px; */
-}
-
-.title {
-      font-family: Inter;
-      font-weight: 600;
-     color: var(--d-grey); 
-}
-
-.reg-btn{
-    background-color: var(--primary);
-    color: var(--white);
-    padding: 8px 32px;
-    
+.img::after{
+      content: '';
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.5);
 }

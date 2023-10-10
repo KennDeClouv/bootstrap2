@@ -25,152 +25,253 @@
     <title>BootStrap | Second</title>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <!--?===== NAVBAR =====-->
-    <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg position-fixed w-100 shadow-sm" style="background-color: var(--silver);">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg position-fixed w-100 shadow-sm bg-light"
+            style="background-color: var(--silver); height: 9vh;">
             <div class="container">
-                <a class="navbar-brand" href="#home"><img src="img/Logo.png" alt=""></a>
+                <a class="navbar-brand" href="#home"><i class="fa-brands fa-bootstrap"> Bootstrap</i></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                     aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end" id="offcanvasRight">
+                <div class="offcanvas offcanvas-end w-50" id="offcanvasRight">
                     <div class="offcanvas-header p-4">
                         <i class="fa-brands fa-bootstrap"> Bootstrap</i>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <ul class="n navbar-nav gap-5">
-                        <li class="nav-item align-items-center">
-                            <a class="nav-link p-0" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link p-0" href="#service">Service</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link p-0" href="#feature">Feature</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link p-0" href="#product">Product</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link p-0" href="#testimonial">Testimonial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link p-0" href="#faq">FAQ</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="login">
-                    <div class="btn" style="color: var(--primary);">Login</div>
-                    <div class="btn" style="background-color: var(--primary);color: var(--white);">Sign up</div>
+                    <div class="link ms-lg-auto m-md-4 m-sm-4 m-4 text-end">
+                        <ul class="n navbar-nav gap-md-3 gap-sm-3 gap-3">
+                            <li class="nav-item align-items-center ">
+                                <a class="nav-link" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#feature">Feature</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#product">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#testimonial">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
+    <!--!===== NAVBAR END ====-->
     <!--?===== HOME SECTION ====-->
-    <section class="home " id="home">
-        <div class="container">
-            <div class="home-des row align-items-center my-5 mx-auto">
-                <div class="col">
-                    <div class="title fs-1 mb-0">
-                        Lesson and insights <br><span>from 8 years</span>
-                    </div>
-                    <div class="subtitle my-4">
-                        Where to grow your business as a photographer: site or social media?
-                    </div>
-                    <div class="reg-btn btn btn-success mt-1">Register</div>
+    <section class="home d-flex w-100" id="home" style="height: 102vh;">
+        <div class="img"></div>
+        <div class="hero-title m-auto text-center">
+            <p class="h1 ps-4 text-light position-relative" style="bottom: -3.2vw;">Bootstrap</p>
+            <h1 class="text-info ps-4" style="font-size: 8vw;">PIXEL DESIGN</h1>
+            <p class="text-light fs-5 col-lg-10 col-md-9 col-sm-8 m-auto ">Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Obcaecati
+                tenetur quo quam quod quis expedita suscipit.</p>
+            <a href="#feature">
+                <div class="btn btn-light m-3 p-2" href="#feature">Learn More <i class="fa-solid fa-chevron-down"></i>
                 </div>
-                <div class="col">
-                    <img src="img/Illustration.png" alt="" class="float-end">
-                </div>
-            </div>
-            <div class="ellipse text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                    <circle cx="5" cy="5" r="5" fill="#4CAF4F" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                    <circle opacity="0.3" cx="5" cy="5" r="5" fill="#4CAF4F" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                    <circle opacity="0.3" cx="5" cy="5" r="5" fill="#4CAF4F" />
-                </svg>
-            </div>
+            </a>
         </div>
     </section>
-    <!--?===== SERVICES SECTION ====-->
-    <section class="services" id="service">
-        <div class="container">
-            <div class="our-clients my-5">
-                <div class="tit text-center">
-                    <h2>Our Clients</h2>
-                    <p>We have been working with some Fortune 500+ clients</p>
-                </div>
-                <div class="row text-center my-4">
-                    <div class="col">
-                        <img src="img/Logo1.png" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="img/Logo2.png" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="img/Logo3.png" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="img/Logo4.png" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="img/Logo5.png" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="img/Logo6.png" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="img/Logo3.png" alt="">
-                    </div>
+    <!--!===== HOME END ====-->
+    <!--?===== FEATURE  SECTION ====-->
+    <div class="feature bg-dark" id="feature">
+        <div class="container-xl">
+            <div class="row justify-content-center g-4">
+                <div class="col-xl-8 text-center">
+                    <h3 class="text-info position-relative" style="bottom: -1vw;">FEATURE</h3>
+                    <h1 class="text-light">THIS IS ABOUT OUR FEATURE</h1>
+                    <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+                        dolores et excepturi obcaecati fugiat. Non earum iusto nesciunt eligendi nisi!</p>
                 </div>
             </div>
-            <div class="manage my-5 py-3">
-                <div class="tit text-center">
-                    <h2 class="col-6 m-auto">Manage your entire community in a single system</h2>
-                    <p>Who is Nextcent suitable for?</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 d-flex justify-content-center g-4">
+                    <div class="card bg-info" style="width: 18rem;">
+                        <img src="https://cutewallpaper.org/21/pixel-wallpaper-gif/Aesthetic-Pixel-Art-Gif-Hd-Wallpapers-and-backgrounds-.gif"
+                            class="card-img-top rounded-3 p-1" alt="..." style="height: 25rem; ">
+                        <div class="card-body">
+                            <h5 class="card-title text-light">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="btn btn-light d-block mt-5" type="button" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">Learn More</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="row text-center justify-content-around my-5">
-                    <div class="col">
-                        <div class="m-auto card w-75 shadow-sm" style="border: var(--silver) 1px solid ;">
-                            <img src="img/Icon.png" alt="" style="width: fit-content; margin: auto;">
-                            <div class="tit">
-                                <h2>Membership Organisations</h2>
-                                <p>Our membership management software provides full automation of membership renewals and
-                                    payments</p>
-                            </div>
-
+                <div class="col-lg-4 d-flex justify-content-center g-4">
+                    <div class="card bg-info" style="width: 18rem;">
+                        <img src="https://64.media.tumblr.com/6d037291fa6580530a7ae1234a012bb2/ddeabf842eb698ac-6a/s500x750/83ebe154909995b4327e31bf0e0c28a194c5908b.gifv"
+                            class="card-img-top rounded-3 p-1" alt="..." style="height: 25rem;">
+                        <div class="card-body">
+                            <h5 class="card-title text-light">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="btn btn-light d-block mt-5" type="button" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop2">Learn More</div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="m-auto card w-75 shadow-sm"  style="border: var(--silver) 1px solid ;">
-                            <img src="img/Icon2.png" alt="" style="width: fit-content; margin: auto;">
-                            <div class="tit">
-                                <h2>National Associations</h2>
-                                <p>Our membership management software provides full automation of membership renewals and
-                                    payments <br></p>
-                            </div>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center g-4">
+                    <div class="card bg-info" style="width: 18rem;">
+                        <img src="https://cutewallpaper.org/21/pixel-wallpaper-gif/Pixel-aesthetic-GIFs-Get-the-best-GIF-on-GIPHY.gif"
+                            class="card-img-top rounded-3 p-1" alt="..." style="height: 25rem;">
+                        <div class="card-body">
+                            <h5 class="card-title text-light">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="btn btn-light d-block mt-5" type="button" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop3">Learn More</div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="m-auto card w-75 shadow-sm"  style="border: var(--silver) 1px solid ;">
-                            <img src="img/Icon3.png" alt="" style="width: fit-content; margin: auto;">
-                            <div class="tit" style="width: fit-content; margin: auto;">
-                                <h2>Clubs And Groups</h2>
-                                <p>Our membership management software provides full automation of membership renewals and
-                                    payments <br><br><br></p>
-                            </div>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center g-4">
+                    <div class="card bg-info" style="width: 18rem;">
+                        <img src="https://i.pinimg.com/originals/05/68/3b/05683b1df65bc81f3b2840ea50b152e0.gif"
+                            class="card-img-top rounded-3 p-1" alt="..." style="height: 25rem;">
+                        <div class="card-body">
+                            <h5 class="card-title text-light">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="btn btn-light d-block mt-5" type="button" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop4">Learn More</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center g-4">
+                    <div class="card bg-info" style="width: 18rem;">
+                        <img src="https://cutewallpaper.org/21/pixel-wallpaper-gif/Pixel-aesthetic-GIFs-Get-the-best-GIF-on-GIPHY.gif"
+                            class="card-img-top rounded-3 p-1" alt="..." style="height: 25rem; ">
+                        <div class="card-body">
+                            <h5 class="card-title text-light">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="btn btn-light d-block mt-5" type="button" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop5">Learn More</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!--? ==== BANK MODAL ==== -->
+    <div class="bank-modal">
+        <div class="modal fade text-light" tabindex="-1" id="staticBackdrop" data-bs-theme="dark">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Pixel Modal 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://cutewallpaper.org/21/pixel-wallpaper-gif/Aesthetic-Pixel-Art-Gif-Hd-Wallpapers-and-backgrounds-.gif"
+                            class="card-img-top rounded-3 p-1" alt="..." style="height: 31rem; ">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade text-light" tabindex="-1" id="staticBackdrop2" data-bs-theme="dark">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Pixel Modal 2</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://cutewallpaper.org/21/pixel-wallpaper-gif/Aesthetic-Pixel-Art-Gif-Hd-Wallpapers-and-backgrounds-.gif"
+                            class="card-img-top rounded-3 p-1" alt="..." style="height: 31rem; ">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade text-light" tabindex="-1" id="staticBackdrop3" data-bs-theme="dark">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Pixel Modal 3</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://cutewallpaper.org/21/pixel-wallpaper-gif/Aesthetic-Pixel-Art-Gif-Hd-Wallpapers-and-backgrounds-.gif"
+                            class="card-img-top rounded-3 p-1" alt="..." style="height: 31rem; ">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade text-light" tabindex="-1" id="staticBackdrop4" data-bs-theme="dark">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Pixel Modal 4</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://cutewallpaper.org/21/pixel-wallpaper-gif/Aesthetic-Pixel-Art-Gif-Hd-Wallpapers-and-backgrounds-.gif"
+                            class="card-img-top rounded-3 p-1" alt="..." style="height: 31rem; ">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade text-light" tabindex="-1" id="staticBackdrop5" data-bs-theme="dark">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Pixel Modal 5</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://cutewallpaper.org/21/pixel-wallpaper-gif/Aesthetic-Pixel-Art-Gif-Hd-Wallpapers-and-backgrounds-.gif"
+                            class="card-img-top rounded-3 p-1" alt="..." style="height: 31rem; ">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--!===== CAROUSEL ====-->
+    <!-- <section class="feature" id="feature">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://giffiles.alphacoders.com/209/209343.gif"
+                        class="d-block w-100 h-100" alt="..." style="max-height: 100vh;">
+                    <div class="carousel-caption">
+                        <h1 class="">First slide label</h1>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cutewallpaper.org/21/pixel-wallpaper-gif/Beautiful-Gifs-in-1080p-in-2019-Pixel-art-Anime-scenery-.gif"
+                        class="d-block w-100" alt="..." style="max-height: 100vh;">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://64.media.tumblr.com/50d43db43843a7dc2fbb93c660a1d0dc/tumblr_ozar2dfRQI1rh3rypo1_1280.gif"
+                        class="d-block w-100" alt="..." style="max-height: 100vh;">
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!--!===== FEATURE  END ====-->
+    <!--?===== PRODUCT SECTION ====-->
+    <!--!===== PRODUCT END ====-->
     <!--? Bootstrap JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
