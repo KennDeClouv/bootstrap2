@@ -19,49 +19,52 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--? Style -->
     <style>
-        html{
-      scroll-padding-top: 4vh;
-}
-.nav-link:hover{
-      color: #00b7ff;
-}
+        html {
+            scroll-padding-top: 4vh;
+        }
 
-.img{
-      background-image: url(https://cutewallpaper.org/21/pixel-wallpaper-gif/Pixel-Animation-City-Skylines-GIF-by-iSaith-Gfycat.gif);
-      height: 100vh;
-      width: 100%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      position: absolute;
-      z-index: -1;
-      /* background-attachment: local; */
-}
-.img::after{
-      content: '';
-      width: 100%;
-      height: 100vh;
-      position: absolute;
-      background-color: rgba(0, 0, 0, 0.5);
-}
+        .nav-link:hover {
+            color: #00b7ff;
+        }
+
+        .img {
+            background-image: url(https://cutewallpaper.org/21/pixel-wallpaper-gif/Pixel-Animation-City-Skylines-GIF-by-iSaith-Gfycat.gif);
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            z-index: -1;
+            /* background-attachment: local; */
+        }
+
+        .img::after {
+            content: '';
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
 
 
-.imgg{
-      background-image: url(https://giffiles.alphacoders.com/209/209343.gif);
-      height: 100vh;
-      width: 100%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      position: absolute;
-      z-index: -1;
-      /* background-attachment: local; */
-}
-.imgg::after{
-      content: '';
-      width: 100%;
-      height: 100vh;
-      position: absolute;
-      background-color: rgba(0, 0, 0, 0.6);
-}
+        .imgg {
+            background-image: url(https://giffiles.alphacoders.com/209/209343.gif);
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            z-index: -1;
+            /* background-attachment: local; */
+        }
+
+        .imgg::after {
+            content: '';
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
     </style>
     <!--? Favicon -->
     <link rel="shortcut icon" href="https://blog.getbootstrap.com/assets/img/favicons/favicon-32x32.png"
@@ -75,14 +78,14 @@
         <nav class="navbar navbar-expand-lg position-fixed w-100 shadow-sm bg-light"
             style="background-color: var(--silver); height: 9vh;">
             <div class="container">
-                <a class="navbar-brand" href="#home"><i class="fa-brands fa-bootstrap"> Bootstrap</i></a>
+                <a class="navbar-brand" href="#home"><i class="fa-sharp fa-solid fa-cubes-stacked"> Pixells</i></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                     aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="offcanvas offcanvas-end w-50" id="offcanvasRight">
                     <div class="offcanvas-header p-4">
-                        <i class="fa-brands fa-bootstrap"> Bootstrap</i>
+                        <i class="fa-sharp fa-solid fa-cubes-stacked"> Pixells</i>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="link ms-lg-auto m-md-4 m-sm-4 m-4 text-end">
@@ -105,15 +108,20 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#contact">Contact</a>
                             </li>
-                            <div class="btn-group dropdown-menu-start">
-                                <button type="button" class="btn btn-info dropdown-toggle dropdown-menu-start text-light"
+                            <div class="btn-group dropdown-menu-start d-none d-lg-block">
+                                <button type="button"
+                                    class="btn btn-info dropdown-toggle dropdown-menu-start text-light"
                                     data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
                                     Others
                                 </button>
-                                <ul class="dropdown-menu dropdown-menu-start">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <ul class="dropdown-menu dropdown-start dropdown-center">
+                                    <li><a class="dropdown-item"
+                                            href="https://terjemahkitab.com/terjemah-khulasoh-nurul-yaqin-juz-1/">Nurul
+                                            Yaqin 1</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="https://terjemahkitab.com/terjemah-khulashoh-nurul-yaqin-juz-2/">Nurul
+                                            Yaqin 2</a></li>
+                                    <li><a class="dropdown-item" href="https://terjemahkitab.com/terjemah-khulashoh-nurul-yaqin-juz-3/">Nurul Yaqin 3</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
@@ -352,7 +360,7 @@
             </div>
         </div>
         <div class="container-xl">
-            <table class="table table-hover table-light m-auto">
+            <table class="table table-hover table-light m-auto table-dark table-striped">
                 <thead>
                     <tr>
                         <th scope="col">No.</th>
@@ -372,18 +380,30 @@
                         <th scope="row">2</th>
                         <td>GIF PIX</td>
                         <td>consectetur adipisicing elit. Maxime, quibusdam?</td>
-                        <td>200 USD</td>
+                        <td>765 USD</td>
                     </tr>
                     <tr>
                         <th scope="row">3</th>
                         <td colspan="2">Larry the Bird Pixel</td>
-                        <td>400 USD</td>
+                        <td>481 USD</td>
                     </tr>
                     <tr>
                         <th scope="row">4</th>
                         <td>Pixels</td>
                         <td>Praesentium modi unde sapiente!</td>
                         <td>300 USD</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Pixels Gif</td>
+                        <td> Dolor quidem dolore consectetur omnis saepe voluptatem?</td>
+                        <td>144 USD</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Gif opo</td>
+                        <td>Omnis saepe voluptatem? Dolor quidem dolore consectetur </td>
+                        <td>361 USD</td>
                     </tr>
                 </tbody>
             </table>
@@ -619,9 +639,124 @@
                             </button>
                         </h2>
                         <div id="collapse15" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body pb-5">tatkala ahli madina masuk islam, ahli makkah pun semakin
+                            <div class="accordion-body pb-2">tatkala ahli madina masuk islam, ahli makkah pun semakin
                                 keras dalam menyakiti orang-orang muslim di sana. Lalu Rasulullah SAW. memerintahkan
                                 mereka berhijrah ke madinah.sebagian dari mereka berhijrah setelah sebagian yang lain.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapseThree">
+                                (41) KESEPAKATAN QURAISY UNTUK MEMBUNUH RASULULLAH SAW
+                            </button>
+                        </h2>
+                        <div id="collapse16" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body pb-2">kaum quraisy membuat rencana akan membunuh Nabi setelah
+                                tersebarnya islam dan hijrahnya . mereka mengadakan rundingan tentang Beliau, lalu Allah
+                                perintah Beliau untuk berhijrah .
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapseThree">
+                                (42) HIJRAHNYA ORANG YANG TERPILIH (RASULULLAH ) SAW
+                            </button>
+                        </h2>
+                        <div id="collapse17" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body pb-2">Rasulullah dan Abu bakar mengambil keputusan akan
+                                berhijarah dan keduanya pun menyiapkan kendaraan, Nabi keluar dari rumah Beliau, tetapi
+                                mereka tidak melihat Beliau sehingga Beliau dan Abu bakar sampai di gua Hira’dan
+                                bersembunyi di situ.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapseThree">
+                                (43) QURAISY MENCARI NABI SAW.
+                            </button>
+                        </h2>
+                        <div id="collapse18" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body pb-2">Pada waktu pagi-pagi sekali,mereka mencari Nabi dan Abu
+                                Bakar sampai ke gua hiraa’ tetapi mereka tidak menemukannya.Abu Bakar melihat mereka
+                                lalu ia menangis.Kemudian quraisy mengadakan sayembara dengan hadiah 100 ekor unta
+                                betina dagi siapa saja yang berhasil mendapatkan Nabi.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapseThree">
+                                (44) NABI KELUAR DARI GUA
+                            </button>
+                        </h2>
+                        <div id="collapse19" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body pb-2">Setelah tiga malam, keluarlah Nabi dan Abu Bakar dari gua,
+                                Keluarga Abu Bakar datang kepada keduanya membawakan sebuah kabar dan makanan.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapseThree">
+                                (45) SINGGAH DI QUBA’-MASJID PERTAMA DALAM ISLAM
+                            </button>
+                        </h2>
+                        <div id="collapse20" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body pb-2">Pada 2 Rabiul Awwal Nabi dan Abu Bakar sampailah di Quba’
+                                dengan aman dan tinggal selama 22 malam. Diantara itu Nabi mendirikan masjid Quba’ yaitu
+                                satu (masjid yang didirikan untuk berbakti).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse21" aria-expanded="false" aria-controls="collapseThree">
+                                (46) SAMPAI DI MADINAH- AWAL JUM’AT DALAM ISLAM- AWAL KHUTBAH DALAM ISLAM
+                            </button>
+                        </h2>
+                        <div id="collapse21" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body pb-2">Keluarlah Rasulullah SAW. dari Quba’ menuju ke
+                                Madinah,disana ada kaum Ansar dan Muhajirin. Nabi Sholat Jum’at dan Berkhutbah dalam
+                                perjalanan. Beliau diterima oleh kaum Ansar dengan penerimaan yang suka cita.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse22" aria-expanded="false" aria-controls="collapseThree">
+                                (47) MASUK DAN SINGGAHNYA NABI DI MADINAH – KECINTAAN KAUM ANSAR KEPADA MUHAJIRIN –
+                                PERSAUDRAAN ISLAM.
+                            </button>
+                        </h2>
+                        <div id="collapse22" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body pb-2">Rasulullah turun dirumah Abu Ayyub Al Ansari dan
+                                mempersaudarakan antara kaum Muhajirin dan kaum Ansar.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse23" aria-expanded="false" aria-controls="collapseThree">
+                                (48) HIJRAH KELUARGA NABI- MENGHALANGI ORANG- ORANG LEMAH-ASAL ADANYA QUNUT- DEMAM
+                                MADINAH
+                            </button>
+                        </h2>
+                        <div id="collapse23" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body pb-4">Rasulullah mengutus orang untuk mencari Ahli Keluarganya
+                                yang tertinggal di Makkah, lalu mereka mencarinya bersama Abdullah Bin Abu Bakar.
+                                Orang-orang Musyrik Mekkah menghalangi orang-orang lemah untuk berhijrah. Nabi Mendoakan
+                                untuk mereka dan Inilah permulaan qunut dalam Sholat.
                             </div>
                         </div>
                     </div>
@@ -677,7 +812,6 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-
                 </div>
                 <p class="d-inline-flex gap-1">
                     <a class="btn btn-dark" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
@@ -760,28 +894,29 @@
         <div class="container py-5">
             <hr class="bg-light">
             <div class="row  text-center justify-content-sm-evenly text-light">
-                <div class="col-auto m-auto">
+                <div class="col-md-4 m-auto">
                     <i class="fs-1 fa-solid fa-envelope my-3 opacity-75 "></i>
                     <h3>EMAIL ME AT</h3>
                     <p>izzulaverroes@gmail.com<br>zuuliziluuz@gmail.com</p>
                 </div>
-                <div class="col-auto m-auto p-2">
+                <div class="col-md-4 m-auto p-2">
                     <i class="fs-1 fa-solid fa-location-dot my-3 opacity-75"></i>
                     <h3>WHERE TO FIND ME</h3>
                     <p>Perumahan Permata Jingga Blok Pinang no. 5,<br>Kota Malang, Jawa Timur, Indonesia</p>
                 </div>
-                <div class="col-auto m-auto">
+                <div class="col-md-4 m-auto">
                     <i class="fs-1 fa-solid fa-phone my-3 opacity-75"></i>
                     <h3>MY PHONE</h3>
                     <p>+62 813 3644 6666<br>+62 813 5777 7766</p>
                 </div>
             </div>
             <div class="container-sm mt-5">
-                <div class="row justify-content-sm-between">
-                    <div class="col">
+                <div class="row justify-content-sm-between text-center text-lg-start">
+                    <div class="col-lg-6">
                         © 2023 Copyright Bootstrap | Designed by Muhammad Ken Izzulhaq
                     </div>
-                    <div class="col text-end m-auto">
+                    <hr class="my-3 d-block d-lg-none w-75 m-auto">
+                    <div class="col-lg-6 text-lg-end m-auto text-center mt-lg-0">
                         <a href="https://instagram.com"><i class="fa-brands fa-instagram text-light"></i></a>
                         <a href="https://facebook.com" class="ms-4"><i
                                 class="fa-brands fa-facebook-f text-light"></i></a>
