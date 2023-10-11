@@ -53,9 +53,36 @@
                                 <a class="nav-link" href="#product">Product</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="#description">Description</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#preview">Preview</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="#contact">Contact</a>
                             </li>
+                            <div class="btn-group dropdown-menu-start">
+                                <button type="button" class="btn btn-dark dropdown-toggle dropdown-menu-start" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                                  Action
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-start" >
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                </ul>
+                              </div>
                         </ul>
+                    </div>
+                    <div class="btn-group me-2 d-lg-block d-xxl-none d-xl-none d-lg-none p-3 justify-content-around mt-auto"
+                        role="group" aria-label="Second group">
+                        <a href="#home"><button type="button" class="btn btn-secondary">1</button></a>
+                        <a href="#feature"><button type="button" class="btn btn-secondary">2</button></a>
+                        <a href="#product"><button type="button" class="btn btn-secondary">3</button></a>
+                        <a href="#description"><button type="button" class="btn btn-secondary">4</button></a>
+                        <a href="#contact"><button type="button" class="btn btn-secondary">5</button></a>
+                        <a href="#home"><button type="button" class="btn btn-secondary">6</button></a>
                     </div>
                 </div>
             </div>
@@ -81,7 +108,7 @@
     <!--?===== FEATURE  SECTION ====-->
     <div class="feature bg-dark pb-5" id="feature">
         <div class="container-xl">
-            <div class="row justify-content-center g-4">
+            <div class="row justify-content-center g-4 pt-4">
                 <div class="col-xl-8 text-center">
                     <h3 class="text-info position-relative" style="bottom: -1vw;">FEATURE</h3>
                     <h1 class="text-light">THIS IS ABOUT OUR FEATURE</h1>
@@ -155,10 +182,28 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4 d-flex justify-content-center g-4">
+                    <div class="card" aria-hidden="true" style="width: 18rem;">
+                        <img src="https://www.superiorlawncareusa.com/wp-content/uploads/2020/05/loading-gif-png-5.gif" class="card-img-top" alt="..."><br><br><br><br>
+                        <div class="card-body">
+                          <h5 class="card-title placeholder-glow">
+                            <span class="placeholder col-6"></span>
+                          </h5>
+                          <p class="card-text placeholder-glow">
+                            <span class="placeholder col-7 bg-info"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-4 bg-warning"></span>
+                            <span class="placeholder col-6 bg-danger"></span>
+                            <span class="placeholder col-8 bg-primary"></span>
+                          </p>
+                          <a class="btn btn-dark disabled placeholder d-block mt-5" aria-disabled="true"></a>
+                        </div>
+                      </div>
+                </div>
             </div>
         </div>
     </div>
-    <!--? ==== BANK MODAL ==== -->
+    <!--todo ==== BANK MODAL ==== -->
     <div class="bank-modal">
         <div class="modal fade text-light" tabindex="-1" id="staticBackdrop" data-bs-theme="dark">
             <div class="modal-dialog">
@@ -250,7 +295,7 @@
     <!--?===== PRODUCT SECTION ====-->
     <section class="product" id="product" style="height: 100vh;">
         <div class="imgg"></div>
-        <div class="row justify-content-center g-4">
+        <div class="row justify-content-center g-4 pt-4">
             <div class="col-xl-8 text-center">
                 <h3 class="text-info position-relative" style="bottom: -1vw;">PRODUCT</h3>
                 <h1 class="text-light">INTRODUCING OUR PRODUCT</h1>
@@ -298,57 +343,312 @@
     </section>
     <!--!===== PRODUCT END ====-->
     <!--?===== DESCRIPTION SECTION ====-->
-    <section class="description bg-dark">
+    <section class="description bg-dark py-4" id="description">
         <div class="container-md">
-            <div class="row justify-content-center g-4">
+            <div class="row justify-content-center g-4 pt-4">
                 <div class="col-xl-8 text-center">
-                    <h3 class="text-info position-relative" style="bottom: -1vw;">PRODUCT</h3>
-                    <h1 class="text-light">INTRODUCING OUR PRODUCT</h1>
+                    <h3 class="text-info position-relative" style="bottom: -1vw;">DESCRIPTION</h3>
+                    <h1 class="text-light">DESCRIPTION ABOUT OUR PRODUCT</h1>
                     <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
                         dolores et excepturi obcaecati fugiat. Non earum iusto nesciunt eligendi nisi!</p>
                 </div>
             </div>
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                      Accordion Item #1
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <div class="container-md">
+                <div class="accordion pb-3" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                (26) NABI DAN KELUARGANYA DI BOIKOT
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Quraisy melihat islam tersebar di antara qabilah-qabilah ,maka mereka mengambil
+                                keputusan untuk membunuh Nabi SAW. Mereka memboikot Beliau dan keluargannya di Syi'ib.
+                                dan mereka bersepakat untuk tidak mau menerima perjanjian perdamaian untuk
+                                selama-lamanya , kecuali apabila keluarga Nabi menyerahkan Beliau kepada mereka untuk
+                                dibunuh. mereka tulis kesepakatan itu di satu lembaran yang mereka gantungkan di ka'bah.
+                                Kejadian itu terjadi di tahun ke tujuh dari kenabian Beliau.
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Accordion Item #2
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                (27) HIJRAH KE HABASYAH YANG KE DUA KALI
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Sesudah Nabi masuk Syi'ib pada tahun yang ketujuh,Beliau perintahkan orang-orang islam
+                                untuk berhijrah untuk yang kedua kalinya ke Habasyah . Lalu berhijrahlah 73 orang
+                                laki-laki dan 11 orang perempuan.Kemudian mereka disusul oleh orang-orang Muslim Yaman.
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Accordion Item #3
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                (28) RAJA HABASYAH MASUK ISLAM
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Kaum quraisy mengirimkan dua orang utusan ke Najasyi meminta untuk menyerahkan
+                                orang-orang muslimin dan mengusirnya dari negerinya,tetapi dia menolak ,malahan dia
+                                masuk islam.Kemudian Najasyi meninggal dunia,lalu Nabi SAW.mensholatinya secara ghoib.
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                (29) KELUARNYA NABI SAW DARI PEMBOIKOTAN
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Dalam tahun yang kesepuluh surat perjanjian itu dirobek, lalu Nabi keluar dari kepungan
+                                setelah kurang dar tiga tahun.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                (30) UTUSAN NAJRAN
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body pb-2">
+                                Dalam tahun itu,datanglah sebagian dari Nashrani Najran kepada Nabi sebagai
+                                utusan.Mereka mendengarkan bacaan Qur'an kemudian mereka masuk Islam.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                                (31) WAFATNYA KHADIJAH - PERNIKAHAN SAUDAH DAN AISYAH R.A.
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body pb-2">
+                                Siti Khodijah wafat dalam tahun kesepuluh,kemudian Nabi menikah dengan Saudah kemudian
+                                menikah lagi dengan Aisyah ketika itu dia masih berumur 7 tahun ,dan dicampuri ketika
+                                sudah berada di Madinah.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+                                (32) WAFATNYA PAMAN NABI
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body pb-2">
+                                Dalam tahun itu meninggalah paman Beliau, Abu Thalib dan ia adalah sebesar-besar
+                                penolong Nabi tetapi ia tidak masuk islam karena takut celaan kaumnya .
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseThree">
+                                (33) GANGGUAN ORANG QURAISY KEPADA NABI SAW.
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body pb-2">
+                                Gangguan orang quraisy kepada Nabi sangat berat ketika wafat nya istri dan paman Beliau,
+                                hingga mereka bermaksud hendak membunuh Beliau .
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseThree">
+                                (34) HIJRAH KE THAIF
+                            </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body pb-2">
+                                Ketika gangguan kepada Nabi sangat berat maka berhijrahlah Beliau ke Thaif bersama Zaid
+                                bin Haritsah , Beliau ajukan halnya itu kepada kaum tsaqif , tetapi mereka tolak dengan
+                                penolakan yang tidak baik dan mereka sakiti Beliau dan zaid juga menahan
+                                gangguan-gangguan dari mereka .
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseThree">
+                                (35) ISRA' DAN MI'RAJ NABI SAW.
+                            </button>
+                        </h2>
+                        <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body pb-2">Dalam tahun kesebelas, Allah muliakan Beliau dengan isra’
+                                dan mi’raj
+                                Isra’ itu ialah perjalanan Nabi Muhammad SAW. pada waktu malam dari masjidil haram ke
+                                masjidil aqsha.
+                                Dan mi’raj itu ialah naiknya Nabi SAW, ke Langit paling atas dan dari padanya
+                                di wajibkan sholat lima waktu.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapseThree">
+                                (36) MENGAJAK PARA QABILAH KEPADA AGAMA
+                            </button>
+                        </h2>
+                        <div id="collapse11" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body pb-2">Di tahun ini Nabi menampakkan dirinya kepada beberapa
+                                qabilah di pasar mereka. Sebagian mereka menerima ajakannya dan sebagian lain menolak
+                                dengan baik.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapseThree">
+                                (37) ISLAMNYA KAUM ANSHAR
+                            </button>
+                        </h2>
+                        <div id="collapse12" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body pb-2">Dalam tahun ini, 6 oarang dari Yatsrib masuk ke makkah
+                                untuk berhaji, lalu mereka masuk islam, dan mereka siarkan nama Rasulallah SAW. di
+                                madinah.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapseThree">
+                                (38) PERJANJIAN ‘AQABAH PERTAMA
+                            </button>
+                        </h2>
+                        <div id="collapse13" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body pb-2">Dalam tahun yang ke dua belas datanglah dua belas orang
+                                laki-laki dari madina. Mereka berbai’at kepada Nabi di ‘aqobah lalu mereka pulang dan
+                                menyiarkan agama di madinah.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapseThree">
+                                (39) ‘AQOBAH YANG KE-DUA
+                            </button>
+                        </h2>
+                        <div id="collapse14" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body pb-2">Dalam tahun yang ke tiga belas datanglah 73 orang laki-laki
+                                dan 2 perempuan kepada Nabi sebagai utusan. Mereka berbai’at dengan Nabi di ‘aqobah yang
+                                kedua, dan mereka kembali dan menyebarkan islam di madinah.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapseThree">
+                                (40) HIJRAHNYA KAUM MUSLIMIN KE MADINAH
+                            </button>
+                        </h2>
+                        <div id="collapse15" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body pb-5">tatkala ahli madina masuk islam, ahli makkah pun semakin
+                                keras dalam menyakiti orang-orang muslim di sana. Lalu Rasulullah SAW. memerintahkan
+                                mereka berhijrah ke madinah.sebagian dari mereka berhijrah setelah sebagian yang lain.
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="alert alert-warning alert-dismissible mt-2" role="alert">
+                    GAK BAHAYA TA ?
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        2781
+                    </span>
+                </div>
+            </div>
         </div>
     </section>
     <!--!===== DESCRIPTION END ====-->
+    <!--?===== PREVIEW SECTION ====-->
+    <section class="preview bg-info pt-3 pb-5" id="preview">
+        <div class="container-md">
+            <div class="row justify-content-center g-4 pt-4">
+                <div class="col-xl-8 text-center">
+                    <h3 class="text-dark position-relative" style="bottom: -1vw;">PREVIEW</h3>
+                    <h1 class="text-light"> OUR PRODUCT PREVIEW</h1>
+                    <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+                        dolores et excepturi obcaecati fugiat. Non earum iusto nesciunt eligendi nisi!</p>
+                </div>
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner rounded-4" style="height: 45vw; aspect-ratio: 16/9;">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="https://64.media.tumblr.com/50d43db43843a7dc2fbb93c660a1d0dc/tumblr_ozar2dfRQI1rh3rypo1_1280.gif " class="d-block w-100" alt="..." >
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://i.pinimg.com/originals/19/6a/d9/196ad9d3122098b297d7b99ce9ff209f.gif" class="d-block w-100" alt="..." style="height: 45vw;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://cutewallpaper.org/21/pixel-wallpaper-gif/Beautiful-Gifs-in-1080p-in-2019-Pixel-art-Anime-scenery-.gif" class="d-block w-100" alt="..." >
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                
+              </div>
+              <p class="d-inline-flex gap-1">
+                <a class="btn btn-dark" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">BACA WOI </a>
+                <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">YANG INI JUGA</button>
+                <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+              </p>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem eveniet totam minus repellat voluptatem illo dolor et necessitatibus doloremque quibusdam deleniti maxime natus iure quidem deserunt soluta, animi, consequatur quis.
+                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        2781
+                    </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card card-body">
+                      Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+        </div>
+    </section>
+    <!--!===== PREVIEW END ====-->
     <!--?===== CONTACT SECTION ====-->
     <section class="contact bg-dark" id="contact">
         <div class="container-lg">
@@ -389,7 +689,7 @@
         </div>
     </section>
     <!--!===== CONTACT END ====-->
-    <footer class="bg-dark text-light" >
+    <footer class="bg-dark text-light">
         <div class="container py-5">
             <hr class="bg-light">
             <div class="row  text-center justify-content-sm-evenly text-light">
@@ -416,9 +716,11 @@
                     </div>
                     <div class="col text-end m-auto">
                         <a href="https://instagram.com"><i class="fa-brands fa-instagram text-light"></i></a>
-                        <a href="https://facebook.com" class="ms-4"><i class="fa-brands fa-facebook-f text-light"></i></a>
+                        <a href="https://facebook.com" class="ms-4"><i
+                                class="fa-brands fa-facebook-f text-light"></i></a>
                         <a href="https://twitter.com" class="ms-4"><i class="fa-brands fa-x-twitter text-light"></i></a>
-                        <a href="https://pinterest.com" class="ms-4"><i class="fa-brands fa-pinterest-p text-light"></i></a>
+                        <a href="https://pinterest.com" class="ms-4"><i
+                                class="fa-brands fa-pinterest-p text-light"></i></a>
                         <a href="https://linkedin.com" class="ms-4"><i class="fa-brands fa-linkedin text-light"></i></a>
                     </div>
                 </div>
@@ -432,3 +734,19 @@
 </body>
 
 </html>
+https://64.media.tumblr.com/50d43db43843a7dc2fbb93c660a1d0dc/tumblr_ozar2dfRQI1rh3rypo1_1280.gif 
+ https://giffiles.alphacoders.com/209/209343.gif
+ https://64.media.tumblr.com/6d037291fa6580530a7ae1234a012bb2/ddeabf842eb698ac-6a/s500x750/83ebe154909995b4327e31bf0e0c28a194c5908b.gifv
+ https://i.pinimg.com/originals/19/6a/d9/196ad9d3122098b297d7b99ce9ff209f.gif
+ https://cutewallpaper.org/21/pixel-wallpaper-gif/Aesthetic-Pixel-Art-Gif-Hd-Wallpapers-and-backgrounds-.gif
+ https://cutewallpaper.org/21/pixel-wallpaper-gif/Pixel-Animation-City-Skylines-GIF-by-iSaith-Gfycat.gif
+ https://cutewallpaper.org/21/pixel-wallpaper-gif/gif-Backgrounds-Wallpaper-Cave.gif
+https://cutewallpaper.org/21/pixel-wallpaper-gif/featured-gifs-WiffleGif.gif
+https://cutewallpaper.org/21/pixel-wallpaper-gif/Pixel-aesthetic-GIFs-Get-the-best-GIF-on-GIPHY.gif
+https://cutewallpaper.org/21/pixel-wallpaper-gif/Beautiful-Gifs-in-1080p-in-2019-Pixel-art-Anime-scenery-.gif
+https://cutewallpaper.org/21/pixel-wallpaper-gif/Futuristic-Pixel-Animated-IPhone-Wallpaper-GIF-by-iSaith.gif
+ https://i.pinimg.com/originals/9a/58/c3/9a58c343701abc80f7e1d5ec4142ab4d.gif
+ https://i.pinimg.com/originals/05/68/3b/05683b1df65bc81f3b2840ea50b152e0.gif
+ https://i.pinimg.com/originals/43/c3/d7/43c3d78afed80c2c68240e622437d81e.gif
+ https://gamebrott.com/wp-content/uploads/2023/05/Herta-Honkai-Star-Rail.gif
+ https://media.tenor.com/betamD00Qe0AAAAC/pixel.gif
