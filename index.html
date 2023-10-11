@@ -22,9 +22,12 @@
         html {
             scroll-padding-top: 4vh;
         }
-
+        .nav-link{
+            transition: all .4s;
+        }
         .nav-link:hover {
             color: #00b7ff;
+            transform: translateY(-8%);
         }
 
         .img {
@@ -65,6 +68,11 @@
             position: absolute;
             background-color: rgba(0, 0, 0, 0.6);
         }
+        @media screen and (max-width:991px){
+            .nav-link:hover {
+            transform: translateX(-4%);
+        }
+        }
     </style>
     <!--? Favicon -->
     <link rel="shortcut icon" href="https://blog.getbootstrap.com/assets/img/favicons/favicon-32x32.png"
@@ -76,8 +84,8 @@
     <!--?===== NAVBAR =====-->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg position-fixed w-100 shadow-sm bg-light"
-            style="background-color: var(--silver); height: 9vh;">
-            <div class="container">
+            style="height: 9vh;">
+            <div class="container-md">
                 <a class="navbar-brand" href="#home"><i class="fa-sharp fa-solid fa-cubes-stacked"> Pixells</i></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                     aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
@@ -137,7 +145,6 @@
                         <a href="#product"><button type="button" class="btn btn-secondary">3</button></a>
                         <a href="#description"><button type="button" class="btn btn-secondary">4</button></a>
                         <a href="#contact"><button type="button" class="btn btn-secondary">5</button></a>
-                        <a href="#home"><button type="button" class="btn btn-secondary">6</button></a>
                     </div>
                 </div>
             </div>
@@ -398,12 +405,6 @@
                         <td>Pixels Gif</td>
                         <td> Dolor quidem dolore consectetur omnis saepe voluptatem?</td>
                         <td>144 USD</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">6</th>
-                        <td>Gif opo</td>
-                        <td>Omnis saepe voluptatem? Dolor quidem dolore consectetur </td>
-                        <td>361 USD</td>
                     </tr>
                 </tbody>
             </table>
